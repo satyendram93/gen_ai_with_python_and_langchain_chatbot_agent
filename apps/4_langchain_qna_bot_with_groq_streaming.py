@@ -1,11 +1,9 @@
 ### Requirements_for_this_app = [ LLM, Tools - Google search tool, Agent, Memory, streaming, Web Interface]
 
-# Standard library imports (first)
 from dotenv import load_dotenv
 import os
 
-# Third-party imports (alphabetical within group)
-load_dotenv()  # Call after imports, before using env vars
+load_dotenv()  
 
 from langchain_community.utilities import GoogleSerperAPIWrapper
 from langchain.agents import create_agent

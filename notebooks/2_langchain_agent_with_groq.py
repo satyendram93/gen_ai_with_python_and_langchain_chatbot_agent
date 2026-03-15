@@ -6,8 +6,6 @@ from dotenv import load_dotenv
 import os 
 load_dotenv()
 
-key = os.getenv('GROQ_API_KEY')
-
 
 @tool
 def add_numbers(a:int, b:int):
