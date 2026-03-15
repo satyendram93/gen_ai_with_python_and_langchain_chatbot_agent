@@ -1,10 +1,11 @@
+from dotenv import load_dotenv
+import os
+load_dotenv()
+
 from langchain_community.utilities import GoogleSerperAPIWrapper
 from langchain_groq import ChatGroq
 from langchain.agents import create_agent
 from langgraph.checkpoint.memory import InMemorySaver
-from dotenv import load_dotenv
-import os
-load_dotenv()
 
 
 search = GoogleSerperAPIWrapper()

@@ -1,10 +1,10 @@
-from langchain.tools import tool
-from langchain.agents import create_agent
-from langchain_groq import ChatGroq
-
 from dotenv import load_dotenv
 import os 
 load_dotenv()
+
+from langchain.tools import tool
+from langchain.agents import create_agent
+from langchain_groq import ChatGroq
 
 
 @tool

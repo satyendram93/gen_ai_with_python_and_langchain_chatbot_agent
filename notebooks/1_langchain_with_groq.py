@@ -1,8 +1,8 @@
-from langchain_groq import ChatGroq
-
 from dotenv import load_dotenv
 import os 
 load_dotenv()
+
+from langchain_groq import ChatGroq
 
 llm = ChatGroq(model='qwen/qwen3-32b', streaming=True)
 
